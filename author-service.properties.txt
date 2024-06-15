@@ -1,0 +1,11 @@
+server.port=8083
+
+spring.application.name=author-service
+
+# Database configuration
+spring.datasource.url=jdbc:mysql://localhost:3306/authordb
+spring.datasource.username=authoruser
+spring.datasource.password=password
+
+# Feign client configuration
+feign.hystrix.enabled=true
