@@ -1,0 +1,15 @@
+management.info.env.enabled=true
+management.endpoint.shutdown.enabled=true
+info.app.name=bookshop
+management.endpoints.web.exposure.include=*
+
+eureka.client.register-with-eureka=true
+eureka.client.fetch-registry=true
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+eureka.instance.prefer-ip-address=true
+
+resilience4j.circuitbreaker.instances.salesOffId.minimum-number-of-calls=5
+resilience4j.circuitbreaker.instances.salesOffId.failure-rate-threshold=70
+resilience4j.circuitbreaker.instances.salesOffId.wait-duration-in-open-state=10000
+resilience4j.circuitbreaker.instances.salesOffId.permitted-number-of-calls-in-half-open-state=1
+resilience4j.circuitbreaker.configs.default.register-health-indicator=true
